@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUXE | Fashion Industry</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+  body{background:#fff;color:#111}
+  header{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;border-bottom:1px solid #eee;position:sticky;top:0;background:#fff;z-index:10}
+  .logo{font-size:28px;font-weight:800;letter-spacing:3px}
+  .logo span{color:#e91e63}
+  nav a{margin:0 15px;text-decoration:none;color:#111;font-weight:500}
+  nav a:hover{color:#e91e63}
+  .btn{background:#111;color:#fff;padding:10px 20px;border:none;cursor:pointer;border-radius:25px}
+  .btn:hover{background:#e91e63}
+  .hero{display:flex;align-items:center;justify-content:space-between;padding:60px 40px;background:#fdf2f5}
+  .hero h1{font-size:55px;line-height:1.1}
+  .hero h1 span{color:#e91e63}
+  .hero p{margin:20px 0;color:#555;font-size:18px}
+  .hero img{width:420px;border-radius:20px}
+  .section{padding:50px 40px}
+  .section h2{text-align:center;font-size:32px;margin-bottom:30px}
+  .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+  .card{border:1px solid #eee;border-radius:15px;overflow:hidden;text-align:center;padding-bottom:15px;transition:0.3s}
+  .card:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,0.1)}
+  .card img{width:100%;height:280px;object-fit:cover}
+  .card h3{margin:12px 0 5px}
+  .price{color:#e91e63;font-weight:700;font-size:18px}
+  .card button{margin-top:10px;background:#111;color:#fff;border:none;padding:9px 18px;border-radius:20px;cursor:pointer}
+  .card button:hover{background:#e91e63}
+  .collection{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+  .collection img{width:100%;height:300px;object-fit:cover;border-radius:15px}
+  footer{background:#111;color:#fff;text-align:center;padding:25px}
+  @media(max-width:768px){.hero{flex-direction:column;text-align:center}.hero img{width:100%;margin-top:20px}.collection{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">LUXE<span>.</span></div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#collection">Collection</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="btn">Shop Now</button>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>New Season<br><span>Fashion</span> Is Here</h1>
+    <p>Trendy outfits, premium quality & best prices for Men & Women.</p>
+    <button class="btn">Explore Collection →</button>
+  </div>
+  <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800" alt="Fashion Model">
+</section>
+
+<section class="section" id="shop">
+  <h2>Best Selling Products</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600" alt="T-Shirt">
+      <h3>Classic White T-Shirt</h3>
+      <p>⭐ 4.8 | Men</p>
+      <div class="price">₹499</div>
+      <button onclick="alert('Added to Cart!')">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600" alt="Jacket">
+      <h3>Stylish Denim Jacket</h3>
+      <p>⭐ 4.9 | Women</p>
+      <div class="price">₹1,299</div>
+      <button onclick="alert('Added to Cart!')">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600" alt="Dress">
+      <h3>Elegant Summer Dress</h3>
+      <p>⭐ 4.7 | Women</p>
+      <div class="price">₹999</div>
+      <button onclick="alert('Added to Cart!')">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600" alt="Hoodie">
+      <h3>Premium Hoodie</h3>
+      <p>⭐ 4.8 | Unisex</p>
+      <div class="price">₹899</div>
+      <button onclick="alert('Added to Cart!')">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="collection">
+  <h2>New Collection</h2>
+  <div class="collection">
+    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600" alt="Shopping">
+    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=600" alt="Fashion">
+    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600" alt="Store">
+  </div>
+</section>
+
+<footer id="contact">
+  <h3>LUXE FASHION</h3>
+  <p>Follow us on Instagram | Facebook | YouTube</p>
+  <p>© 2026 LUXE. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
